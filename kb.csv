@@ -1,0 +1,11 @@
+error_pattern,resolution
+out of memory,Increase memory or scale deployment
+connection refused,Check if service is running and port is open
+disk full,Clear disk space or increase storage
+timeout error,Increase timeout or optimize backend query
+permission denied,Check file permissions using chmod
+cpu overload,Scale system or optimize processes
+service unavailable,Restart service or check load balancer
+database connection failed,Verify DB credentials and network
+too many requests,Apply rate limiting or scale server
+port already in use,Kill process or change port
