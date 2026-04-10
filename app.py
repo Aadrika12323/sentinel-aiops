@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from model import get_solution
 from db import cursor, conn
 import datetime
+import os
 
 app = Flask(__name__)
 
@@ -32,5 +33,7 @@ def analyze():
         "timestamp": str(datetime.datetime.now())
     })
 
+# ✅ IMPORTANT FIX FOR RENDER
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host='0.0.0.0', port=port)
