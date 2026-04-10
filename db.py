@@ -18,7 +18,7 @@ else:
     conn = mysql.connector.connect(
         host="localhost",
         user="root",
-        password=os.getenv("DB_PASSWORD"),
+        password="password",
         database="sentinel_aiops"
     )
     cursor = conn.cursor()
